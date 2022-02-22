@@ -1,0 +1,38 @@
+from turtle import*
+
+t = Turtle()
+
+#Blue Outer Rectangle
+t.penup()
+t.goto(-170,-145)
+t.pendown()
+t.screen.colormode(255)
+t.pencolor(70, 107, 139)
+t.fillcolor(65, 149, 223)
+t.begin_fill()
+t.forward(340)
+t.left(90)
+t.forward(290)
+t.left(90)
+t.forward(340)
+t.left(90)
+t.forward(290)
+t.end_fill()
+
+#White Inner Rectangle
+t.penup()
+t.goto(-140,-115)
+t.pencolor(70, 107, 139)
+t.pendown()
+t.fillcolor('white')
+t.begin_fill()
+t.left(90)
+t.forward(280)
+t.left(90)
+t.forward(230)
+t.left(90)
+t.forward(280)
+t.left(90)
+t.forward(230)
+t.end_fill()
+t.hideturtle()
